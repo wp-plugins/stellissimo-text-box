@@ -1,11 +1,27 @@
 <?php
 /* 
-Plugin Name: Stellissimo Text Box
-Plugin URI: http://www.overclokk.net/stellissimo-text-box-per-wordpress
-Description: This plugin add a box containing text/html you want show at the end of each article
-Version: 1.1.1
-Author: Enea Overclokk
-Author URI: http://www.overclokk.net
+ * Plugin Name: Stellissimo Text Box
+ * Plugin URI: http://www.overclokk.net/stellissimo-text-box-per-wordpress
+ * Description: This plugin add a box containing text/html you want show at the end of each article
+ * Version: 1.1.2
+ * Author: Enea Overclokk
+ * Author URI: http://www.overclokk.net
+ *
+ * @package Stellissimo Text Box
+ * @since 1.0.0
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, version 2, as 
+ * published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
 // ================== ADD text ================== //
@@ -84,7 +100,7 @@ function stellissimo_update_options_form()
                        <th scope="row"><label for="stellissimo_text_content">Box Text</label></th>
                            <td>
                                <textarea id="stellissimo_text_content" name="stellissimo_text_content" style="width:400px; height:200px"><?php echo get_option('stellissimo_text_content'); ?></textarea>
-                               <span class="description"><br>Insert here a TEXT or HTML code, this will be show in each pages and posts.</span>    
+                               <span class="description"><br>Insert here a TEXT or HTML code, this will be show in each pages and posts</span>    
                            </td>
                    </tr>
                    <tr valign="top">
@@ -133,4 +149,3 @@ if(isset($_GET['page']) AND $_GET['page'] == 'stellissimo-options-page')
 }
 
 // ================================ END ADD COLORPICKER ===================================== //
-?>
